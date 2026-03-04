@@ -391,7 +391,28 @@ li + li {
 
 @media (max-width: 760px) {
   .hero {
-    min-height: 70vh;
+    display: block;
+    min-height: auto;
+    padding-bottom: 1rem;
+  }
+
+  .hero-flyer {
+    position: relative;
+    inset: auto;
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    object-position: center top;
+  }
+
+  .hero-overlay {
+    display: none;
+  }
+
+  .hero-center {
+    margin-top: 0;
+    padding: 0.75rem 1rem 0;
   }
 
   .hero-center .btn-xl {
@@ -400,11 +421,6 @@ li + li {
     max-width: 320px;
     font-size: clamp(1rem, 4.5vw, 1.2rem);
     padding: 0.95rem 1.2rem;
-  }
-
-  .hero-flyer {
-    object-fit: cover;
-    object-position: center top;
   }
 
   .nav-inner {
