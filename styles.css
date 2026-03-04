@@ -394,6 +394,14 @@ li + li {
     min-height: 70vh;
   }
 
+  .hero-center .btn-xl {
+    min-width: 0;
+    width: 90%;
+    max-width: 320px;
+    font-size: clamp(1rem, 4.5vw, 1.2rem);
+    padding: 0.95rem 1.2rem;
+  }
+
   .hero-flyer {
     object-fit: cover;
     object-position: center top;
