@@ -390,6 +390,11 @@ li + li {
 }
 
 @media (max-width: 760px) {
+  .hero-flyer {
+    object-fit: cover;
+    object-position: center top;
+  }
+
   .nav-inner {
     flex-direction: column;
     justify-content: center;
